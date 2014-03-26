@@ -5,5 +5,9 @@ require 'joybox'
 
 Motion::Project::App.setup do |app|
   # Use `rake config' to see complete project settings.
-  app.name = 'ball30'
+  app.name = 'Ball 30'
+  app.interface_orientations = [:landscape_left, :landscape_right]
+  app.device_family = [:iphone]
+  # app.icons = ['icon.png', 'icon@2x.png']
+  # app.prerendered_icon = true
 end
