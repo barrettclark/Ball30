@@ -9,5 +9,6 @@ Motion::Project::App.setup do |app|
   app.interface_orientations = [:landscape_left, :landscape_right]
   app.device_family = [:iphone]
   # app.icons = ['icon.png', 'icon@2x.png']
-  # app.prerendered_icon = true
+  app.icons = ['redball.png']
+  app.prerendered_icon = true
 end
