@@ -3,8 +3,6 @@ class GameLayer < Joybox::Core::Layer
   MAXIMUM_BALLS = 30
 
   def on_enter
-    redball = Sprite.new file_name: 'redball.png', position: Screen.center
-    self << redball
     schedule_update do |dt|
       launch_balls
     end

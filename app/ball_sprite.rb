@@ -1,10 +1,9 @@
 class BallSprite < Joybox::Core::Sprite
-  MAXIMUM_SIZE = 96.0
-
   def initialize
-    @random = Random.new
-    position = [@random.rand(1..Screen.width), Screen.height + MAXIMUM_SIZE]
+    # @random = Random.new
+    # position = [@random.rand(1..Screen.width), @random.rand(1..Screen.height)]
+    position = [Screen.width/2, Screen.height-10]
     file_name = ['blueball.png', 'redball.png'].sample
-    super file_name: file_name, position: Screen.center
+    super file_name: file_name, position: position
   end
 end
