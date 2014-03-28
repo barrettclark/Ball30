@@ -11,4 +11,12 @@ class BallSprite < Joybox::Core::Sprite
     rect = CGRect.new(boundingBox.origin, boundingBox.size)
     CGRectContainsPoint(rect, touch_location)
   end
+
+  def end_position
+    Screen.center
+  end
+
+  def initial_move_duration
+    4.0
+  end
 end

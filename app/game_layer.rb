@@ -23,6 +23,9 @@ class GameLayer < Joybox::Core::Layer
       number = MAXIMUM_BALLS - @balls.size
       number.times do
         ball = BallSprite.new
+        ball.stop_all_actions
+        ball.run_action Move.to position: ball.end_position,
+          duration: ball.initial_move_duration
         self   << ball
         @balls << ball
       end
